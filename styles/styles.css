@@ -1,0 +1,185 @@
+:root{
+    --Orange-500: hsl(25, 97%, 53%);
+    --Orange-400: hsla(25, 100%, 55%, 0.702);
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-400: hsla(217, 12%, 63%, 0.198);
+    --Grey-700: hsl(213, 19%, 15%);
+    --Grey-950: hsl(216, 12%, 8%);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Grey-950);
+}
+
+.container{
+    display: block;
+    background-color: var(--Grey-700);
+    width: 400px;
+    height: 400px;
+    margin:  auto;
+    margin-top:150px ;
+    border-radius: 40px;
+    padding: 40px;
+    align-items: baseline;
+}
+.resultcontainer{
+    display: none;
+    background-color: var(--Grey-700);
+    width: 400px;
+    height: 400px;
+    margin:  auto;
+    margin-top:150px ;
+    border-radius: 40px;
+    padding: 40px;
+    align-items: baseline;
+    justify-content: center;
+}
+.resultimg,.resultimg img{
+    height: 130px ;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.result_div{
+    display: flex;
+    width: 190px;
+    height: 35px;
+    margin:20px auto;
+    background-color: var(--Grey-400);
+    color: var(--Orange-500);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.resultcontainer h3{
+    width: 150px;
+    display: flex;
+    color: var(--White);
+    margin: 50px auto;
+    font-size: 30px;
+    justify-self: center;
+}
+.resultcontainer .prgph{
+    display:flex;
+    color: var(--Grey-500);
+    width: 400px;
+    font-size: 20px;
+    justify-self: center;
+    margin: auto;
+    text-align: center;
+}
+.icon{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color:var(--Grey-900);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+.icon img{
+    height: 20px;
+    width: 20px;
+}
+.inercontainer{
+    height: 45%;
+    
+}
+.title{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: var(--White);
+    font-family:"Overpass", sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.paragraph{
+    /* background-color: black; */
+    display: flex;
+    height: 100px;
+    width: auto;
+    align-items:flex-start ;
+    font-size: 17px;
+    color: var(--Grey-500);
+    font-family:"Overpass", sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;    
+}
+.multybtns{
+    width: 100%;
+    height: 35%;
+    /* background-color: black; */
+    margin-top: 0px;
+}
+.btns{
+
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: aqua; */
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    color: var(--Grey-500);
+    background-color: var(--Grey-900);
+    border: 0;
+    font-size: 20px;
+    font-family:"Overpass", sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
+    cursor: pointer; 
+}
+.smtbtn{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.submit{
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    color: var(--Grey-700);
+    background-color: var(--Orange-500);
+    border: 0;
+    font-size: 20px;
+    font-family:"Overpass", sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
+    cursor: pointer;  
+}
+.submit:hover,.btn:hover{
+    color:var(--Grey-700) ;
+    background-color: var(--White);
+    transition: 0.2s ease-in-out;
+}
+.btn:active{
+    background-color: var(--Orange-500);
+}
+.btn::after{
+    background-color: var(--White);
+}
+.active{
+    background-color: var(--Orange-500);
+    color: var(--Grey-700);
+}
