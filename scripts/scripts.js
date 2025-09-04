@@ -2,7 +2,7 @@ const button = document.querySelectorAll(".btn");
 const smt = document.querySelector("#submitbtn");
 const container= document.getElementsByClassName("container");
 const result = document.getElementsByClassName("resultcontainer");
-const rate = document.getElementsByClassName("reslt");
+const rate = document.getElementById("reslt");
 let value;
 button.forEach((e)=>{
     e.addEventListener("click",(e)=>{
@@ -18,6 +18,6 @@ smt.addEventListener("click",()=>{
     console.log(value);
     container[0].style.display="none" ;
     result[0].style.display="block";
-    rate.textContent= `"${value.reslt}"`;
+    rate.textContent= `${value}`;
 });
 
