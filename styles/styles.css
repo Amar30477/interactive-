@@ -44,11 +44,18 @@ body{
     align-items: baseline;
     justify-content: center;
 }
-.resultimg,.resultimg img{
-    height: 130px ;
+.resultimg{
+    height: 150px ;
     width: 200px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultimg img{
+    height: 130px;
+    width: 190px;
 }
 .result_div{
     display: flex;
